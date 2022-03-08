@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+#Clone application files from github
+sudo -u mob_app_user sh -c 'cd /home/mob_app_user/ && git clone https://github.com/AzubiAfrica/Mobalysis'

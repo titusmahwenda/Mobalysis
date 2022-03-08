@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+#set up the application environment
+sudo  bash -c 'echo "export DBUSER=mob_db_user" >> /home/mob_app_user/.bashrc'
+sudo  bash -c 'echo "export DBNAME=mobalysis" >> /home/mob_app_user/.bashrc'
+sudo  bash -c 'echo "export DBHOST=127.0.0.1" >> /home/mob_app_user/.bashrc'
+sudo  bash -c 'echo "export DBPASS=mobdbpass" >> /home/mob_app_user/.bashrc'
+sudo  bash -c 'echo "export DBPORT=5432" >> /home/mob_app_user/.bashrc'
+

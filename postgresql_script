@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#install all dependencies
+sudo apt update
+sudo apt install python3-pip python3-venv postgresql nginx uwsgi -y
+sudo -u postgres psql -c "create user mob_db_user with encrypted password 'mobdbpass'"
+sudo -u postgres psql -c "create database mobalysis"
+sudo -u postgres psql -c "grant all privileges on database mobalysis to mob_app_user"

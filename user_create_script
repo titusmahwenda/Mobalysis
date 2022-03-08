@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+#Set up the user
+sudo apt update
+sudo useradd -m mob_app_user
+sudo chsh -s /sbin/nologin mob_app_user
