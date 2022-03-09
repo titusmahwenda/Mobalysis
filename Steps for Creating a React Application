@@ -1,0 +1,11 @@
+
+## Step 1 — Creating a React Project
+- npx create-react-app react-deploy
+- cd react-deploy
+- npm start
+- npm run build
+
+## Step 2 — Determining Deployment File Location on your Ubuntu Server
+- Go to: /etc/nginx/sites-enabled/<domain-name> and rename your domain name.
+- Copy all the build files to: /var/www/<domain-name>/html/
+
